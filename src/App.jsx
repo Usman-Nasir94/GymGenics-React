@@ -1,12 +1,13 @@
-import  Navbar  from './navbar'
+import  Navbar  from './components/navbar'
+import Footer from './components/footer'
 
 const App = () => {
 
   return (
     
-    <div className='flex flex-col items-center justify-center w-full md:w-3/4  h-screen gap-10 bg-gray-100'>
+    <div className='flex flex-col items-center w-full h-screen gap-10 bg-gray-100'>
       <Navbar />
-      <h1 className='text-4xl font-bold text-gray-800 '>GymGenics</h1>
+      <Footer />
     </div>
   )
 }
