@@ -6,11 +6,11 @@ const App = () => {
 
   return (
     
-    <div className='flex flex-col items-center w-full h-screen gap-10 bg-gray-100'>
+    <>
       <Navbar />
       <FirstRide />
       <Footer />
-    </div>
+    </>
   )
 }
 

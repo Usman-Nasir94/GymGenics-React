@@ -1,10 +1,13 @@
+import HeroSection from '../sections/heroSection'
 import WhatToExpect from '../sections/whatToExpect'
+
 
 const firstRide = () => {
   return (
-    <div>
+    <>
+      <HeroSection />
       <WhatToExpect />
-    </div>
+    </>
   )
 }
 

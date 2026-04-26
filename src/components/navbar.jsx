@@ -3,11 +3,11 @@ import logo from '../assets/logo.svg'
 import { Menu } from 'lucide-react';
 
 const Navbar = () => {
-    const [isMenuOpen, setIsMenuOpen] = useState(true);
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
 
     return (
-        <nav className='w-full bg-black h-22 p-3 text-white flex items-center justify-between md:px-10h-28'>
+        <nav className='w-full bg-black h-20 p-3 text-white flex items-center justify-between md:px-10 md:h-26'>
             <div >
                 {logo && <img src={logo} alt="logo" className='w-30 md:w-36 lg:w-40' />}
             </div>
@@ -33,14 +33,13 @@ const Navbar = () => {
                 </ul>
             </div>
 
-            <div className='md:hidden'>
+            <div onClick={() => setIsMenuOpen(true)} className='md:hidden'>
                 <Menu />
             </div>
 
-            {/* Mobile Drawer */}
-            <div className={`fixed top-0 right-0 h-screen w-1/2 bg-[#121212] z-50 transform transition-transform duration-300 ease-in-out ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} md:hidden`}>
+            {/* Menu Drawer */}
+            <div className={`fixed top-0 right-0 h-screen w-2/3 bg-[#121212] z-50 transform transition-transform duration-300 ease-in-out ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} md:hidden`}>
 
-                {/* Close Button Header */}
                 <div className="flex justify-end p-6">
                     <button className="cursor-pointer" size={32} onClick={() => setIsMenuOpen(false)} > X </button>
                 </div>
