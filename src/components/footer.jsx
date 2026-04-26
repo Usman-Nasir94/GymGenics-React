@@ -10,10 +10,10 @@ const Footer = () => {
 
             <div className='grid grid-cols-2 grid-rows-2 gap-1.5 space-y-6 border-b border-[#423836] md:grid-cols-3 md:grid-rows-1 p-4'>
                 <ul className='space-y-2 text-md border-r border-[#423836] mr-6 pr-8'>
-                    <li className='transition-transform duration-300 hover:scale-105 hover:text-[#FF5722] cursor-pointer'>Facebook</li>
-                    <li className='transition-transform duration-300 hover:scale-105 hover:text-[#FF5722] cursor-pointer'>Instagram</li>
-                    <li className='transition-transform duration-300 hover:scale-105 hover:text-[#FF5722] cursor-pointer'>LinkedIn</li>
-                    <li className='transition-transform duration-300 hover:scale-105 hover:text-[#FF5722] cursor-pointer'>Twitter</li>
+                    <li className='transition-transform duration-300 hover:scale-105 hover:text-[#FF5722] cursor-pointer'>Home</li>
+                    <li className='transition-transform duration-300 hover:scale-105 hover:text-[#FF5722] cursor-pointer'>Classes</li>
+                    <li className='transition-transform duration-300 hover:scale-105 hover:text-[#FF5722] cursor-pointer'>About</li>
+                    <li className='transition-transform duration-300 hover:scale-105 hover:text-[#FF5722] cursor-pointer'>Book</li>
                 </ul>
                 <ul className='space-y-2 text- md:border-r border-[#423836] text-center md:mr-8'>
                     <li className='transition-transform duration-300 hover:scale-105 hover:text-[#FF5722] cursor-pointer'>Facebook</li>
